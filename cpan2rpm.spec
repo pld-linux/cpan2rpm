@@ -6,6 +6,7 @@ Release:	1
 License:	GPL/Artistic
 Group:          Development/Languages/Perl
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	70cc987bc884aa911dcf3bea7596f42e
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
