@@ -18,7 +18,7 @@ cpan2rpm tworzy pakiety RPM z pakietów CPAN, automatycznie je
 znajduj±c, ¶ci±gaj±c, tworz±c plik spec i buduj±c pakiet.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %{__make}
