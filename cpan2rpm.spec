@@ -25,8 +25,10 @@ znajduj±c, ¶ci±gaj±c, tworz±c plik spec i buduj±c pakiet.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install cpan2rpm $RPM_BUILD_ROOT%{_bindir}/
+install cpan2rpm.1 $RPM_BUILD_ROOT%{_mandir}/man1/
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
