@@ -1,4 +1,5 @@
 Summary:	Create RPMS from CPAN modules
+Summary(pl):	Narzêdzie tworz±ce pakiety RPM z modu³ów CPAN
 Name:		cpan2rpm
 Version:	1.2
 Release:	1
@@ -11,20 +12,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 cpan2rpm creates RPMs from CPAN packages, automating the locating,
 fetching, spec file creation and building of the package.
 
+%description -l pl
+cpan2rpm tworzy pakiety RPM z pakietów CPAN, automatycznie je
+znajduj±c, ¶ci±gaj±c, tworz±c plik spec i buduj±c pakiet.
+
 %prep
 %setup -q -n %{name}-%{version}
 
 %build
 %{__make}
 
+%install
+rm -rf $RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%install
-rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
-%{_libdir}/rpm/brp-compress
-find $RPM_BUILD_ROOT/ -type f -print | sed "s@^$RPM_BUILD_ROOT@@g" > %{name}-filelist
-
-%files -f %{name}-filelist
+%files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
