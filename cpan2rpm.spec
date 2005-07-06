@@ -6,12 +6,12 @@
 Summary:	Create RPMS from CPAN modules
 Summary(pl):	Narzêdzie tworz±ce pakiety RPM z modu³ów CPAN
 Name:		cpan2rpm
-Version:	2.027
+Version:	2.028
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/EC/ECALDER/%{name}-%{version}.tar.gz
-# Source0-md5:	e468a95625dce88d63be19169e3f7daf
+# Source0-md5:	4f85e07dfa848e5b72791aed975e8bc4
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
