@@ -8,7 +8,7 @@ Summary(pl):	Narzêdzie tworz±ce pakiety RPM z modu³ów CPAN
 Name:		cpan2rpm
 Version:	2.028
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/EC/ECALDER/%{name}-%{version}.tar.gz
 # Source0-md5:	4f85e07dfa848e5b72791aed975e8bc4
