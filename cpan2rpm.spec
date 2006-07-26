@@ -12,6 +12,7 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/EC/ECALDER/%{name}-%{version}.tar.gz
 # Source0-md5:	4f85e07dfa848e5b72791aed975e8bc4
+URL:		http://perl.arix.com/cpan2rpm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
