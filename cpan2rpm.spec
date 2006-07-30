@@ -12,6 +12,7 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/E/EC/ECALDER/%{name}-%{version}.tar.gz
 # Source0-md5:	4f85e07dfa848e5b72791aed975e8bc4
+Patch0:		%{name}-make.patch
 URL:		http://perl.arix.com/cpan2rpm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -28,6 +29,7 @@ znajduj±c, ¶ci±gaj±c, tworz±c plik spec i buduj±c pakiet.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
