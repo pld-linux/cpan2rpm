@@ -1,0 +1,12 @@
+diff -Nur cpan2rpm-2.028.ori/Makefile.PL cpan2rpm-2.028.mod/Makefile.PL
+--- cpan2rpm-2.028.ori/Makefile.PL	2003-01-31 21:51:38.000000000 +0100
++++ cpan2rpm-2.028.mod/Makefile.PL	2006-07-31 00:24:57.370626000 +0200
+@@ -32,7 +32,7 @@
+     my $block = $self->SUPER::processPL(@_);
+     # "Version:" in spec needs to match
+     # "$VERSION" from VERSION_FROM
+-    $block =~ s%(spec.PL\s*)$%$1 \$\(VERSION_FROM\)%m;
++    #$block =~ s%(spec.PL\s*)$%$1 \$\(VERSION_FROM\)%m;
+     $block;
+     }
+ 
