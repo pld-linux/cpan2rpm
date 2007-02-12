@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Create RPMS from CPAN modules
-Summary(pl.UTF-8):   Narzędzie tworzące pakiety RPM z modułów CPAN
+Summary(pl.UTF-8):	Narzędzie tworzące pakiety RPM z modułów CPAN
 Name:		cpan2rpm
 Version:	2.028
 Release:	1
