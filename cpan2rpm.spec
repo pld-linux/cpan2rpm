@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Create RPMS from CPAN modules
-Summary(pl):	Narzêdzie tworz±ce pakiety RPM z modu³ów CPAN
+Summary(pl.UTF-8):   NarzÄ™dzie tworzÄ…ce pakiety RPM z moduÅ‚Ã³w CPAN
 Name:		cpan2rpm
 Version:	2.028
 Release:	1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 cpan2rpm creates RPMs from CPAN packages, automating the locating,
 fetching, spec file creation and building of the package.
 
-%description -l pl
-cpan2rpm tworzy pakiety RPM z pakietów CPAN, automatycznie je
-znajduj±c, ¶ci±gaj±c, tworz±c plik spec i buduj±c pakiet.
+%description -l pl.UTF-8
+cpan2rpm tworzy pakiety RPM z pakietÃ³w CPAN, automatycznie je
+znajdujÄ…c, Å›ciÄ…gajÄ…c, tworzÄ…c plik spec i budujÄ…c pakiet.
 
 %prep
 %setup -q
